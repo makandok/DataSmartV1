@@ -10,7 +10,8 @@ namespace JhpDataSystem.store
         public LocalDB()
         {
             var connString = SyncManager.Properties.
-                Settings.Default.TestDbConnString;
+                Settings.Default.ConnString2;
+                //.TestDbConnString;
             ConnectionString = connString;
         }
 

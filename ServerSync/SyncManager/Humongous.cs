@@ -31,9 +31,6 @@ namespace JhpDataSystem
             }
         }
 
-        AssetManager _assetManager { get; set; }
-        Activity _mainContext;
-
         public Dictionary<int, List<FieldValuePair>> TemporalViewData = null;
 
         public void updateFieldDictionary()
@@ -73,12 +70,10 @@ namespace JhpDataSystem
         }
 
         public Dictionary<string, string> ApiAssets = null;
-        public void InitialiseAppResources(AssetManager assetManager, Activity context)
+        public void InitialiseAppResources()
         {
             //ContextManager = null;
             ModuleContext = null;
-            _assetManager = assetManager;
-            _mainContext = context;
             TemporalViewData = new Dictionary<int, List<FieldValuePair>>();
             ApiAssets = new Dictionary<string, string>();
             //we read the api key file

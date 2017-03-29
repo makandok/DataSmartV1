@@ -34,7 +34,7 @@ namespace ServerSync
             //};
             //var ser = Newtonsoft.Json.JsonConvert.SerializeObject(value);
 
-            AppInstance.Instance.InitialiseAppResources(null,null);
+            AppInstance.Instance.InitialiseAppResources();
             //we have loaded the app
             this.menuServerSync.Click += MenuServerSync_Click;
             this.menuServerSyncOldData.Click += MenuServerSync_Click;

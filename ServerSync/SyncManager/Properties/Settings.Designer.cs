@@ -33,5 +33,15 @@ namespace SyncManager.Properties {
                 return ((string)(this["TestDbConnString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;Initial Catalog=ServerSyncDb;Integrated Security=True")]
+        public string ConnString2 {
+            get {
+                return ((string)(this["ConnString2"]));
+            }
+        }
     }
 }
