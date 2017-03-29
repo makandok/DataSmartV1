@@ -1,0 +1,18 @@
+[
+{
+  "servicename":"datastore",
+  "appkey": "place datastore appkey here",
+  "key": "datastore p12 key file name",
+  "projectid": "name of project id",
+  "serviceaccountemail": "cloud-data-store-servc-account@jhpzmb-vmmc-odk.iam.gserviceaccount.com",
+  "reftext": "other unique setting",
+},
+{
+  "servicename":"storage",
+  "appkey": "place datastore appkey here",
+  "key": "datastore p12 key file name",
+  "projectid": "name of project id",
+  "serviceaccountemail": "cloud-data-store-servc-account@jhpzmb-vmmc-odk.iam.gserviceaccount.com",
+  "reftext": "bucket name",
+}
+]

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <Button
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/holo_blue_dark"
+            android:id="@+id/buttonCloseApp"
+            android:text="Close App" />
+        <Button
+            android:layout_alignParentRight="true"
+            margin_right="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/holo_blue_dark"
+            android:id="@+id/tLoggedInUser"
+            android:gravity="right"
+            android:text="Not Logged In" />
+    </RelativeLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <Button
+            android:id="@+id/buttonVmmcHome"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="VMMC" />
+        <Button
+            android:id="@+id/buttonPrepexHome"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Prepex" />
+        <Button
+            android:id="@+id/buttonSiteSession"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="@string/sys_managessession" />
+        <Button
+            android:text="Upload"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/fetchData" />
+    </TableRow>
+</LinearLayout>

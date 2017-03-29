@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<include layout="@layout/nextandprevbuttons" />
+
+    <TextView
+        android:text="@string/generalsummary_hdr"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/generalsummary_hdr" />
+
+    <TextView
+        android:text="@string/facilityname"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/facilityname" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/facilityname"
+        android:hint="@string/facilityname" />
+
+    <TextView
+        android:text="@string/dateofvisit"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_dateofvisit" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_dateofvisit"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_dateofvisit"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/cardserialnumber"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/cardserialnumber" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/cardserialnumber"
+        android:hint="@string/cardserialnumber" />
+
+    <TextView
+        android:text="@string/clientidnumber"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/clientidnumber" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/clientidnumber"
+        android:hint="@string/clientidnumber" />
+
+    <TextView
+        android:text="@string/dateofplacement"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_dateofplacement" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_dateofplacement"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_dateofplacement"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/personaldetails_hdr"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personaldetails_hdr" />
+
+    <TextView
+        android:text="@string/clientname"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/clientname" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/clientname"
+        android:hint="@string/clientname" />
+
+    <TextView
+        android:text="@string/clientsphysicaladdress"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/clientsphysicaladdress" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/clientsphysicaladdress"
+        android:hint="@string/clientsphysicaladdress" />
+
+    <TextView
+        android:text="@string/clienttel"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/clienttel" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/clienttel"
+        android:hint="@string/clienttel" />
+
+    <TextView
+        android:text="@string/removalprocedure_hdr"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/removalprocedure_hdr" />
+
+    <TextView
+android:text="@string/typeofinteraction"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_typeofinteraction" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_typeofinteraction" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/typeofinteraction_removalproceddure"
+android:id="@+id/typeofinteraction_removalproceddure" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/typeofinteraction_followuptelephone"
+android:id="@+id/typeofinteraction_followuptelephone" /></RadioGroup >
+
+    <TextView
+        android:text="@string/timeforcepsapplied"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_timeforcepsapplied" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_timeforcepsapplied"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_timeforcepsapplied"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/timeinnerringremoved"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_timeinnerringremoved" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_timeinnerringremoved"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_timeinnerringremoved"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/comments"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/comments" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/comments"
+        android:hint="@string/comments" />
+
+</LinearLayout>
+</ScrollView>

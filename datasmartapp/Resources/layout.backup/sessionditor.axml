@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/facilityname"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/facilityname" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/facilityname"
+        android:hint="@string/facilityname" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_dateofvisit"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect" />
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_dateofvisit"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>

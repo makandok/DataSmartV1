@@ -1,0 +1,17 @@
+[
+{
+"name":"admin",
+"hash":"myhash",
+"id":"myguid"
+},
+{
+"name":"admin0",
+"hash":"myhash",
+"id":"myguid"
+},
+{
+"name":"manager",
+"hash":"myhash",
+"id":"myguid"
+}
+]

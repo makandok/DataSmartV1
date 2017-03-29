@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout2"
+        android:layout_weight="45">
+        <Button
+            android:text="View Users"
+            android:layout_width="match_parent"
+            android:layout_height="55.0dp"
+            android:id="@+id/buttonAdminViewUsers"
+            android:textColor="@android:color/holo_blue_dark" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="Add / Edit Users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tUserNameLabel"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24dp" />
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="55.0dp"
+            android:id="@+id/tUserName"
+            android:hint="Type username e.g. pbanda"
+            android:textSize="24dp"
+            style="@android:style/Widget.Holo.Light.EditText" />
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="55.0dp"
+            android:id="@+id/tUserNames"
+            android:hint="Full Name e.g. Peter Banda"
+            android:textSize="24dp"
+            style="@android:style/Widget.Holo.Light.EditText" />
+        <EditText
+            android:inputType="numberPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55.0dp"
+            android:id="@+id/tUserPassCode"
+            android:hint="Pin Code"
+            style="@android:style/Widget.Holo.Light.EditText" />
+        <EditText
+            android:inputType="numberPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55.0dp"
+            android:id="@+id/tUserPassCodeAgain"
+            android:hint="Pin Code Again"
+            style="@android:style/Widget.Holo.Light.EditText" />
+        <Button
+            android:text="@string/EditUser"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            padding_left="50dp"
+            android:id="@+id/buttonSaveChanges" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="Device Setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55.0dp"
+            android:id="@+id/tDeviceSerial"
+            android:hint="device serial number"
+            android:textSize="24dp"
+            style="@android:style/Widget.Holo.Light.EditText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35.0dp"
+            android:id="@+id/tDeviceUUID"
+            android:hint="unique identifier"
+            android:textSize="24dp"
+            style="@android:style/Widget.Holo.Light.EditText" />
+        <Button
+            android:text="Save Changes"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            padding_left="50dp"
+            android:id="@+id/buttonSaveDeviceConf" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_weight="55">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:gravity="right">
+            <Button
+                android:text="Log Out"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonAdminLogOut"
+                android:textColor="@android:color/holo_blue_dark" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="Clear all client data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24dp" />
+        <EditText
+            android:inputType="numberPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55.0dp"
+            android:id="@+id/tAuthorizationCode"
+            android:hint="Type authorization code"
+            android:textSize="24dp"
+            style="@android:style/Widget.Holo.Light.EditText" />
+        <Button
+            android:text="Clear Client Data"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            padding_left="60dp"
+            android:id="@+id/buttonClearClientData" />
+    </LinearLayout>
+</LinearLayout>

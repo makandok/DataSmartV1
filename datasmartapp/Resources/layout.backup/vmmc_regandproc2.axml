@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<include layout="@layout/nextandprevbuttons" />
+
+    <TextView
+        android:text="@string/vm_client_info_contd"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vm_client_info_contd" />
+
+    <TextView
+android:text="@string/vm_mmc_reasons"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_mmc_reasons" /> <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_mmc_reasons_partialhivprotection"
+             android:id="@+id/vm_mmc_reasons_partialhivprotection" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_mmc_reasons_religious"
+             android:id="@+id/vm_mmc_reasons_religious" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_mmc_reasons_medicalprotection"
+             android:id="@+id/vm_mmc_reasons_medicalprotection" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_mmc_reasons_sexualenhancement"
+             android:id="@+id/vm_mmc_reasons_sexualenhancement" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_mmc_reasons_hygiene"
+             android:id="@+id/vm_mmc_reasons_hygiene" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_mmc_reasons_cultural"
+             android:id="@+id/vm_mmc_reasons_cultural" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_mmc_reasons_other"
+             android:id="@+id/vm_mmc_reasons_other" />
+
+    <TextView
+        android:text="@string/vm_mmc_reasons_other"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_other_mmc_reasons" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_other_mmc_reasons"
+        android:hint="@string/vm_mmc_reasons_other" />
+
+    <TextView
+android:text="@string/vm_how_client_learnt_mmc"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_how_client_learnt_mmc" /> <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_friendfamily"
+             android:id="@+id/vm_how_client_learnt_mmc_friendfamily" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_partnerspouse"
+             android:id="@+id/vm_how_client_learnt_mmc_partnerspouse" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_vehiclepasystem"
+             android:id="@+id/vm_how_client_learnt_mmc_vehiclepasystem" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_socialmedia"
+             android:id="@+id/vm_how_client_learnt_mmc_socialmedia" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_printmaterialposterleaflet"
+             android:id="@+id/vm_how_client_learnt_mmc_printmaterialposterleaflet" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_radiotv"
+             android:id="@+id/vm_how_client_learnt_mmc_radiotv" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_communitymobilizer"
+             android:id="@+id/vm_how_client_learnt_mmc_communitymobilizer" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_communitymeeting"
+             android:id="@+id/vm_how_client_learnt_mmc_communitymeeting" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_how_client_learnt_mmc_healthfacility"
+             android:id="@+id/vm_how_client_learnt_mmc_healthfacility" />
+
+    <TextView
+android:text="@string/vm_known_status"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_known_status" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_known_status" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_known_status_reactive"
+android:id="@+id/vm_known_status_reactive" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_known_status_nonreactive"
+android:id="@+id/vm_known_status_nonreactive" /></RadioGroup >
+
+    <TextView
+android:text="@string/vm_services_offered"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_services_offered" /> <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_services_offered_counseling"
+             android:id="@+id/vm_services_offered_counseling" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_services_offered_hivtesting"
+             android:id="@+id/vm_services_offered_hivtesting" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_services_offered_resultscollected"
+             android:id="@+id/vm_services_offered_resultscollected" />
+
+    <TextView
+android:text="@string/vm_hiv_test_result"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_hiv_test_result" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_hiv_test_result" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_hiv_test_result_reactive"
+android:id="@+id/vm_hiv_test_result_reactive" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_hiv_test_result_nonreactive"
+android:id="@+id/vm_hiv_test_result_nonreactive" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_hiv_test_result_indeterminate"
+android:id="@+id/vm_hiv_test_result_indeterminate" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_physical_ex1"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vm_physical_ex1" />
+
+    <TextView
+android:text="@string/vm_sexual_past_3_mos"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_sexual_past_3_mos" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_sexual_past_3_mos" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_sexual_past_3_mos_yes"
+android:id="@+id/vm_sexual_past_3_mos_yes" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_sexual_past_3_mos_no"
+android:id="@+id/vm_sexual_past_3_mos_no" /></RadioGroup >
+
+    <TextView
+android:text="@string/vm_did_client_use_condom"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_did_client_use_condom" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_did_client_use_condom" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_did_client_use_condom_yes"
+android:id="@+id/vm_did_client_use_condom_yes" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_did_client_use_condom_no"
+android:id="@+id/vm_did_client_use_condom_no" /></RadioGroup >
+
+    <TextView
+android:text="@string/vm_client_health_cond"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_client_health_cond" /> <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_client_health_cond_haemophilia"
+             android:id="@+id/vm_client_health_cond_haemophilia" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_client_health_cond_hypertension"
+             android:id="@+id/vm_client_health_cond_hypertension" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_client_health_cond_diabetessugardiseases"
+             android:id="@+id/vm_client_health_cond_diabetessugardiseases" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_client_health_cond_sicklecell"
+             android:id="@+id/vm_client_health_cond_sicklecell" />
+ <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+             android:text="@string/vm_client_health_cond_bleedingnosemouth"
+             android:id="@+id/vm_client_health_cond_bleedingnosemouth" />
+
+</LinearLayout>
+</ScrollView>

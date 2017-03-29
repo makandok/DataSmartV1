@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:hint="Client Names"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="30sp"
+        android:id="@+id/clientSummaryNames" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:hint="Contact Number"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clientSummaryTelephone" />
+        <TextView
+            android:hint="Course Day"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clientSummaryTDate" />
+        <TextView
+            android:hint="Date of placement"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clientSummaryPlacementDate" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="25dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:hint="Card Serial"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clientSummaryCardSerial" />
+        <TextView
+            android:hint="MC Number"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clientSummaryMCNumber" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<include layout="@layout/nextandprevbuttons" />
+
+    <TextView
+        android:text="@string/vm_operation_notes_hdr"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vm_operation_notes_hdr" />
+
+    <TextView
+        android:text="@string/vm_mc_date"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_vm_mc_date" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_vm_mc_date"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_vm_mc_date"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/vm_mc_provider_name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_mc_provider_name" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_mc_provider_name"
+        android:hint="@string/vm_mc_provider_name" />
+
+    <TextView
+        android:text="@string/vm_assistant"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_assistant" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_assistant"
+        android:hint="@string/vm_assistant" />
+
+    <TextView
+android:text="@string/vm_mmc_performed"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_mmc_performed" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_mmc_performed" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_mmc_performed_yes"
+android:id="@+id/vm_mmc_performed_yes" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_mmc_performed_no"
+android:id="@+id/vm_mmc_performed_no" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_mmc_start_time"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_vm_mmc_start_time" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_vm_mmc_start_time"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_vm_mmc_start_time"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/vm_mmc_end_time"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_vm_mmc_end_time" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_vm_mmc_end_time"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_vm_mmc_end_time"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+android:text="@string/vm_skin_preparation"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_skin_preparation" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_skin_preparation" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_skin_preparation_povudine"
+android:id="@+id/vm_skin_preparation_povudine" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_skin_preparation_other"
+android:id="@+id/vm_skin_preparation_other" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_other_skin_preparation"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_other_skin_preparation" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_other_skin_preparation"
+        android:hint="@string/vm_other_skin_preparation" />
+
+    <TextView
+android:text="@string/vm_type_local_anaes"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_type_local_anaes" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_type_local_anaes" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_local_anaes_lignocaine"
+android:id="@+id/vm_type_local_anaes_lignocaine" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_local_anaes_bupivacaine"
+android:id="@+id/vm_type_local_anaes_bupivacaine" /></RadioGroup >
+
+    <TextView
+android:text="@string/vm_lignocaine_conc"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_lignocaine_conc" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_lignocaine_conc" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_lignocaine_conc_001"
+android:id="@+id/vm_lignocaine_conc_001" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_lignocaine_conc_002"
+android:id="@+id/vm_lignocaine_conc_002" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_local_anaes_amt"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_local_anaes_amt" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/vm_local_anaes_amt"
+        android:hint="@string/vm_local_anaes_amt" />
+
+    <TextView
+android:text="@string/vm_type_of_procedure"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_type_of_procedure" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_type_of_procedure" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_procedure_dorsalslit"
+android:id="@+id/vm_type_of_procedure_dorsalslit" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_procedure_shangring"
+android:id="@+id/vm_type_of_procedure_shangring" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_procedure_prepex"
+android:id="@+id/vm_type_of_procedure_prepex" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_procedure_other"
+android:id="@+id/vm_type_of_procedure_other" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_other_type_of_procedure"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_other_type_of_procedure" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_other_type_of_procedure"
+        android:hint="@string/vm_other_type_of_procedure" />
+
+    <TextView
+android:text="@string/vm_type_of_suture"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_type_of_suture" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_type_of_suture" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_suture_chromiccatgut"
+android:id="@+id/vm_type_of_suture_chromiccatgut" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_suture_vicryl"
+android:id="@+id/vm_type_of_suture_vicryl" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_suture_other"
+android:id="@+id/vm_type_of_suture_other" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_other_type_suture"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_other_type_suture" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_other_type_suture"
+        android:hint="@string/vm_other_type_suture" />
+
+    <TextView
+android:text="@string/vm_complic_dur_surg"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_complic_dur_surg" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_complic_dur_surg" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_complic_dur_surg_none"
+android:id="@+id/vm_complic_dur_surg_none" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_complic_dur_surg_yes"
+android:id="@+id/vm_complic_dur_surg_yes" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_complic_dursurg_hdr"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vm_complic_dursurg_hdr" />
+    <LinearLayout
+        android:background="@color/colorTableHeader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="350dp"
+            android:text="@string/vm_complic_dursurg_hdr_moderate"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/vm_complic_dursurg_hdr_severe"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_complic_pain" >
+    <TextView
+android:text="@string/vm_complic_pain"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_complic_pain" />
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_pain_moderate" />
+
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_pain_severe" /></RadioGroup >
+
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_complic_excsv_bleeding" >
+    <TextView
+android:text="@string/vm_complic_excsv_bleeding"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_complic_excsv_bleeding" />
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_excsv_bleeding_moderate" />
+
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_excsv_bleeding_severe" /></RadioGroup >
+
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_complic_anaes_related" >
+    <TextView
+android:text="@string/vm_complic_anaes_related"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_complic_anaes_related" />
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_anaes_related_moderate" />
+
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_anaes_related_severe" /></RadioGroup >
+
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_complic_excsv_skin" >
+    <TextView
+android:text="@string/vm_complic_excsv_skin"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_complic_excsv_skin" />
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_excsv_skin_moderate" />
+
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_excsv_skin_severe" /></RadioGroup >
+
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_complic_dmg_penis" >
+    <TextView
+android:text="@string/vm_complic_dmg_penis"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_complic_dmg_penis" />
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_dmg_penis_moderate" />
+
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_dmg_penis_severe" /></RadioGroup >
+
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_complic_other" >
+    <TextView
+android:text="@string/vm_complic_other"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_complic_other" />
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_other_moderate" />
+
+<RadioButton
+    android:layout_marginStart="10dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:checked="false"
+android:text=""
+android:id="@+id/vm_complic_other_severe" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_complic_other_spec"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_complic_other_spec" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_complic_other_spec"
+        android:hint="@string/vm_complic_other_spec" />
+
+</LinearLayout>
+</ScrollView>

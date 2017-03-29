@@ -1,0 +1,13 @@
+﻿The following gives a brief outline of steps to take to add new functionality such as
+PPX, VMMC
+1. Add layout resource files e.g. mymodule_file1.axml
+2. Update strings to include all string resources. Ensure string entry names are unique
+3. Add new folder under projects to help separate the logic e.g. vmmc
+4. Add workflow controllers
+5. Specify database tables for each form type
+6. In each workflow controller, specify table names for the forms
+7. Also map the views to an activity 
+8. In LocalEntityStore, under Initialise, add logic that inits the tables
+	e.g. new TableStore(Constants.KIND_PPX_UNSCHEDULEDVISIT).build();
+9. Initialise the ClientSummary table using LocalDb3
+	e.g. new LocalDB3().CreateTable<VmmcClientSummary>();

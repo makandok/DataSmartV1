@@ -1,0 +1,149 @@
+﻿[
+  {
+    "Name": "alternate_address_type",
+    "Values": [
+      "Work",
+      "School",
+      "Friend/Next of Kin"
+    ]
+  },
+  {
+    "Name": "type_of_site",
+    "Values": [
+      "Dedicated Site",
+      "Mobile Outreach",
+      "Masss Event",
+      "Routine Service",
+      "Public hospital/clinic",
+      "Mission hospital",
+      "Private clinic/hospital",
+      "Other"
+    ]
+  },
+  {
+    "Name": "how_client_learnt",
+    "Values": [
+      "Friend/Family",
+      "Partner/Spouse",
+      "Health worker",
+      "Poster/newspaper/leaflet",
+      "Other Client",
+      "Community Mobilizer",
+      "TV/radio"
+    ]
+  },
+  {
+    "Name": "primary_reasons_mc",
+    "Values": [
+      "Partial Hiv protecction",
+      "Sexual pleasure",
+      "STI protection",
+      "Medical",
+      "Appearance",
+      "Hygiene",
+      "Cultural/social/religious",
+      "Other"
+    ]
+  },
+  {
+    "Name": "hiv_status",
+    "Values": [
+      "Positive",
+      "Negative",
+      "Indeterminate",
+      "Unknown/refused/self-reported"
+    ]
+  },
+  {
+    "Name": "yes_no",
+    "Values": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "Name": "med_history",
+    "Values": [
+      "Hemophilia/bleeding disorder",
+      "Diabetes",
+      "Hypertension",
+      "Cancer",
+      "Peripheral vascular disease"
+    ]
+  },
+  {
+    "Name": "sti_complaints",
+    "Values": [
+      "Urethral discharge",
+      "Genital sore",
+      "Painful/weak erection",
+      "Swelling of the scrotum",
+      "Pain on urination",
+      "Difficullty in retracting foreskin",
+      "Other"
+    ]
+  },
+  {
+    "Name": "general_condition",
+    "Values": [
+      "Healthy",
+      "Ill Looking"
+    ]
+  },
+  {
+    "Name": "circumcision_method",
+    "Values": [
+      "Surgical Circumcision",
+      "Prepex Circumcision"
+    ]
+  },
+  {
+    "Name": "device_size",
+    "Values": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "Name": "aes_diagnosed",
+    "Values": [
+      "No Adverse events diagnosed",
+      "Adverse events diagnosed"
+    ]
+  },
+  {
+    "Name": "ae_severity",
+    "Values": [
+      "Mild",
+      "Moderate",
+      "Severe",
+      "Severity not classified"
+    ]
+  },
+  {
+    "Name": "wound_appearance",
+    "Values": [
+      "Fully Healed",
+      "Not fully healed No Complications",
+      "Not fully healed Complications Noted"
+    ]
+  },
+  {
+    "Name": "interaction_type",
+    "Values": [
+      "RemovalProceddure",
+      "Followup telephone",
+      "Physical Visit"
+    ]
+  },
+  {
+    "Name": "followup_type",
+    "Values": [
+      "Telephone Call",
+      "Physical Visit"
+    ]
+  }
+]

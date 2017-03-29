@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Page End"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <include
+        layout="@layout/nextAndPrevButtons" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutFinaliseOptions">
+        <Button
+            android:text="Review Data Entered"
+            android:id="@+id/buttonReview"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+        <Button
+            android:text="Discard"
+            android:id="@+id/buttonDiscard"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+        <Button
+            android:text="Save and Finalise"
+            android:id="@+id/buttonFinalise"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+    </LinearLayout>
+</LinearLayout>

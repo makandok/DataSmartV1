@@ -1,0 +1,207 @@
+﻿[
+  {
+    "Name": "vm_age_units",
+    "Values": [
+      "Mo.",
+      "Yrs"
+    ]
+  },
+  {
+    "Name": "vm_client_health_cond",
+    "Values": [
+      "Haemophilia",
+      "Hypertension",
+      "Diabetes/Sugar Diseases",
+      "Sickle cell",
+      "Bleeding Nose/Mouth"
+    ]
+  },
+  {
+    "Name": "vm_complic_dur_surg",
+    "Values": [
+      "None",
+      "Yes"
+    ]
+  },
+  {
+    "Name": "vm_district",
+    "Values": [
+      "districtList"
+    ]
+  },
+  {
+    "Name": "vm_facility_name",
+    "Values": [
+      "facilityList"
+    ]
+  },
+  {
+    "Name": "vm_facility_type",
+    "Values": [
+      "Outreach",
+      "Static"
+    ]
+  },
+  {
+    "Name": "vm_gexam_abnormal_penis",
+    "Values": [
+      "Phimosis",
+      "Paraphimosis",
+      "Genital Ulcer Disease",
+      "Genital Warts",
+      "Discharge",
+      "Epispadiasis",
+      "Hypospadiasis",
+      "Other"
+    ]
+  },
+  {
+    "Name": "vm_hiv_test_result",
+    "Values": [
+      "Reactive",
+      "Non-reactive",
+      "Indeterminate"
+    ]
+  },
+  {
+    "Name": "vm_how_client_learnt_mmc",
+    "Values": [
+      "Friend / Family",
+      "Partner / Spouse",
+      "Vehicle PA System",
+      "Social Media",
+      "Print Material/Poster/Leaflet",
+      "Radio / TV",
+      "Community Mobilizer",
+      "Community Meeting",
+      "Health Facility"
+    ]
+  },
+  {
+    "Name": "vm_known_status",
+    "Values": [
+      "Reactive",
+      "Non-reactive"
+    ]
+  },
+  {
+    "Name": "vm_lignocaine_conc",
+    "Values": [
+      "0.01",
+      "0.02"
+    ]
+  },
+  {
+    "Name": "vm_marital_status",
+    "Values": [
+      "Single",
+      "Divorced",
+      "Married",
+      "Widower",
+      "Co-habiting"
+    ]
+  },
+  {
+    "Name": "vm_mmc_reasons",
+    "Values": [
+      "Partial HIV Protection",
+      "Religious",
+      "Medical Protection",
+      "Sexual Enhancement",
+      "Hygiene",
+      "Cultural",
+      "Other"
+    ]
+  },
+  {
+    "Name": "vm_moderate_severe",
+    "Values": [
+      "Moderate",
+      "Severe"
+    ]
+  },
+  {
+    "Name": "vm_normal_abnormal",
+    "Values": [
+      "Normal",
+      "Abnormal"
+    ]
+  },
+  {
+    "Name": "vm_province",
+    "Values": [
+      "Central",
+      "Copperbelt",
+      "Eastern",
+      "Luapula",
+      "Lusaka",
+      "Muchinga",
+      "North Western",
+      "Northern",
+      "Southern",
+      "Western"
+    ]
+  },
+  {
+    "Name": "vm_religion",
+    "Values": [
+      "Christian",
+      "Islam",
+      "Other"
+    ]
+  },
+  {
+    "Name": "vm_services_offered",
+    "Values": [
+      "Counseling",
+      "HIV Testing",
+      "Results Collected"
+    ]
+  },
+  {
+    "Name": "vm_skin_preparation",
+    "Values": [
+      "Povudine",
+      "Other"
+    ]
+  },
+  {
+    "Name": "vm_type_local_anaes",
+    "Values": [
+      "Lignocaine",
+      "Bupivacaine"
+    ]
+  },
+  {
+    "Name": "vm_type_of_procedure",
+    "Values": [
+      "Dorsal Slit",
+      "Shang ring",
+      "Prepex",
+      "Other"
+    ]
+  },
+  {
+    "Name": "vm_type_of_review",
+    "Values": [
+      "0 - 2 days Review",
+      "3 - 7 days Review",
+      "1 - 6 weeks Review"
+    ]
+  },
+  {
+    "Name": "vm_type_of_suture",
+    "Values": [
+      "Chromic Catgut",
+      "Vicryl",
+      "Other"
+    ]
+  },
+  {
+    "Name": "vm_yes_no",
+    "Values": [
+      "Yes",
+      "No"
+    ]
+  }
+]

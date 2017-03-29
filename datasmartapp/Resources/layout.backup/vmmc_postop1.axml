@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<include layout="@layout/nextandprevbuttons" />
+
+    <TextView
+        android:text="@string/vm_intakeform_serial"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_intakeform_serial" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/vm_intakeform_serial"
+        android:hint="@string/vm_intakeform_serial" />
+
+    <TextView
+        android:text="@string/vm_mc_number"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_mc_number" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/vm_mc_number"
+        android:hint="@string/vm_mc_number" />
+
+    <TextView
+        android:text="@string/vm_postop_review_hdr"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vm_postop_review_hdr" />
+
+    <TextView
+android:text="@string/vm_type_of_review"
+android:textColor="@android:color/holo_blue_dark"
+android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_vm_type_of_review" />
+<RadioGroup
+android:orientation="horizontal"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_vm_type_of_review" >
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_review_02daysreview"
+android:id="@+id/vm_type_of_review_02daysreview" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_review_37daysreview"
+android:id="@+id/vm_type_of_review_37daysreview" />
+
+<RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vm_type_of_review_16weeksreview"
+android:id="@+id/vm_type_of_review_16weeksreview" /></RadioGroup >
+
+    <TextView
+        android:text="@string/vm_postop_data_entry_date"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_vm_postop_data_entry_date" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_vm_postop_data_entry_date"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_vm_postop_data_entry_date"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/vm_postop_data_entered_by"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_postop_data_entered_by" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_postop_data_entered_by"
+        android:hint="@string/vm_postop_data_entered_by" />
+
+    <TextView
+        android:text="@string/vm_reviewer_name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/vm_reviewer_name" />
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:id="@+id/vm_reviewer_name"
+        android:hint="@string/vm_reviewer_name" />
+
+    <TextView
+        android:text="@string/vm_date_of_review"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/dttxt_vm_date_of_review" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dtbtn_vm_date_of_review"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="@string/sys_dateselect"/>
+        <EditText
+            android:text=""
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:id="@+id/dttxt_vm_date_of_review"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

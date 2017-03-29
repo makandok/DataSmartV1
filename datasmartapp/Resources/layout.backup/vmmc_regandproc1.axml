@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/nextandprevbuttons" />
+        <TextView
+            android:text="@string/vm_svc_loc_details_hdr"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vm_svc_loc_details_hdr" />
+        <TextView
+            android:text="@string/vm_intakeform_serial"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_intakeform_serial" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/vm_intakeform_serial"
+            android:hint="@string/vm_intakeform_serial" />
+        <TextView
+            android:text="@string/vm_date_firstedited"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/dttxt_vm_date_firstedited" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dtbtn_vm_date_firstedited"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:text="@string/sys_dateselect" />
+            <EditText
+                android:text=""
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/dttxt_vm_date_firstedited"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <TextView
+            android:text="@string/vm_data_entered_by"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_data_entered_by" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_data_entered_by"
+            android:hint="@string/vm_data_entered_by" />
+        <TextView
+            android:text="@string/vm_facility_name"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_facility_name" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_facility_name"
+            android:hint="@string/vm_facility_name" />
+        <TextView
+            android:text="@string/vm_outreach_name"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_outreach_name" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_outreach_name"
+            android:hint="@string/vm_outreach_name" />
+        <TextView
+            android:text="@string/vm_facility_type"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_vm_facility_type" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_vm_facility_type">
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_facility_type_outreach"
+                android:id="@+id/vm_facility_type_outreach" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_facility_type_static"
+                android:id="@+id/vm_facility_type_static" />
+        </RadioGroup>
+        <TextView
+            android:text="@string/vm_client_info_hdr"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vm_client_info_hdr" />
+        <TextView
+            android:text="@string/vm_registration_hdr"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vm_registration_hdr" />
+        <TextView
+            android:text="@string/vm_mc_number"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_mc_number" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/vm_mc_number"
+            android:hint="@string/vm_mc_number" />
+        <TextView
+            android:text="@string/vm_registration_date"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/dttxt_vm_registration_date" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dtbtn_vm_registration_date"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:text="@string/sys_dateselect" />
+            <EditText
+                android:text=""
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/dttxt_vm_registration_date"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <TextView
+            android:text="@string/vm_last_name"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_last_name" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_last_name"
+            android:hint="@string/vm_last_name" />
+        <TextView
+            android:text="@string/vm_first_name"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_first_name" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_first_name"
+            android:hint="@string/vm_first_name" />
+        <TextView
+            android:text="@string/vm_date_of_birth"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/dttxt_vm_date_of_birth" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dtbtn_vm_date_of_birth"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:text="@string/sys_dateselect" />
+            <EditText
+                android:text=""
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/dttxt_vm_date_of_birth"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <TextView
+            android:text="@string/vm_age_units"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_vm_age_units" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_vm_age_units">
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_age_units_mo"
+                android:id="@+id/vm_age_units_mo" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_age_units_yrs"
+                android:id="@+id/vm_age_units_yrs" />
+        </RadioGroup>
+        <TextView
+            android:text="@string/vm_age"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_age" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/vm_age"
+            android:hint="@string/vm_age" />
+        <TextView
+            android:text="@string/vm_nrc_passport"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_nrc_passport" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_nrc_passport"
+            android:hint="@string/vm_nrc_passport" />
+        <TextView
+            android:text="@string/vm_phone_number"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_phone_number" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/vm_phone_number"
+            android:hint="@string/vm_phone_number" />
+        <TextView
+            android:text="@string/vm_next_of_kin"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_next_of_kin" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_next_of_kin"
+            android:hint="@string/vm_next_of_kin" />
+        <TextView
+            android:text="@string/vm_phone_nextofkin"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_phone_nextofkin" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/vm_phone_nextofkin"
+            android:hint="@string/vm_phone_nextofkin" />
+        <TextView
+            android:text="@string/vm_tribe"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_tribe" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_tribe"
+            android:hint="@string/vm_tribe" />
+        <TextView
+            android:text="@string/vm_religion"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_vm_religion" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_vm_religion">
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_religion_christian"
+                android:id="@+id/vm_religion_christian" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_religion_islam"
+                android:id="@+id/vm_religion_islam" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_religion_other"
+                android:id="@+id/vm_religion_other" />
+        </RadioGroup>
+        <TextView
+            android:text="@string/vm_religion_other"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_religion_other" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_other_religion_specified"
+            android:hint="@string/vm_religion_other" />
+        <TextView
+            android:text="@string/vm_address_hdr"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vm_address_hdr" />
+        <TextView
+            android:text="@string/vm_house_plotno"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_house_plotno" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_house_plotno"
+            android:hint="@string/vm_house_plotno" />
+        <TextView
+            android:text="@string/vm_street"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_street" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_street"
+            android:hint="@string/vm_street" />
+        <TextView
+            android:text="@string/vm_township"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_township" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_township"
+            android:hint="@string/vm_township" />
+        <TextView
+            android:text="@string/vm_village"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_village" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_village"
+            android:hint="@string/vm_village" />
+        <TextView
+            android:text="@string/vm_chief"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vm_chief" />
+        <EditText
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/vm_chief"
+            android:hint="@string/vm_chief" />
+        <TextView
+            android:text="@string/vm_marital_status"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_vm_marital_status" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_vm_marital_status">
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_marital_status_single"
+                android:id="@+id/vm_marital_status_single" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_marital_status_divorced"
+                android:id="@+id/vm_marital_status_divorced" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_marital_status_married"
+                android:id="@+id/vm_marital_status_married" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_marital_status_widower"
+                android:id="@+id/vm_marital_status_widower" />
+            <RadioButton
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/vm_marital_status_cohabiting"
+                android:id="@+id/vm_marital_status_cohabiting" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

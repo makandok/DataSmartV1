@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayoutClientSummOptions"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:weightSum="7"
+        android:id="@+id/rgroupCSOptions">
+        <RadioButton
+            android:checked="true"
+            android:layout_weight="1"
+            android:text="All"
+            android:id="@+id/buttonCSummmAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_weight="1"
+            android:text="Day 3 (Call)"
+            android:id="@+id/buttonCSummmCall3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_weight="1"
+            android:text="Day 6 (SMS)"
+            android:id="@+id/buttonCSummSms6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_weight="1"
+            android:text="Day 7 (SMS or Call)"
+            android:id="@+id/buttonCSummSmsOrCall7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_weight="1"
+            android:text="Day 14 (Call)"
+            android:id="@+id/buttonCSummCall14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_weight="1"
+            android:text="Day 49 (Call)"
+            android:id="@+id/buttonCSummCall49"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_weight="1"
+            android:text="Day 56 (Call)"
+            android:id="@+id/buttonCSummCall56"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_gravity="left"
+            android:text=""
+            android:id="@+id/textCSummOptionsLabel"
+            android:layout_width="550dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Button
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="Perform Action Specified"
+            android:id="@+id/buttonPerformAction"
+            android:layout_width="250dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+<style name="ButtonStandard" parent="@android:style/Widget.Button">
+  <item name="android:layout_height">wrap_content</item>
+  <item name="android:layout_width">fill_parent</item>
+</style>
+  <style name="MyRB" parent="@android:style/Widget.Button">
+    <item name="android:layout_height">25dp</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:gravity">center</item>
+  </style>
+<style name="EditTextStandard" parent="@android:style/Widget.EditText">
+  <item name="android:layout_height">24dp</item>
+  <item name="android:layout_marginLeft">2dip</item>
+  <item name="android:layout_marginRight">2dip</item>
+  <item name="android:layout_marginTop">2dip</item>
+  <item name="android:layout_width">match_parent</item>
+</style>
+<style name="TextViewStandard" parent="@android:style/Widget.TextView">
+  <item name="android:layout_height">wrap_content</item>
+  <item name="android:layout_marginLeft">2dip</item>
+  <item name="android:layout_marginRight">2dip</item>
+  <item name="android:layout_marginTop">2dip</item>
+  <item name="android:layout_width">fill_parent</item>
+  <item name="android:textColor">@android:color/white</item>
+</style>
+  
+  <style name="MainAppTheme" parent="@android:style/Theme.DeviceDefault">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowActionBar">false</item>
+    <!--<item name="android:colorPrimary">#2196F3</item>
+    <item name="android:colorPrimaryDark">#1976D2</item>
+    <item name="android:colorAccent">#FF4081</item>-->
+  </style>
+  
+  
+  <style name="MyTheme.Base" parent="@android:style/Theme.DeviceDefault.Light">
+  </style>
+
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+  <!--<style name="MyTheme.Splash" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/vicfalls</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>-->
+</resources>

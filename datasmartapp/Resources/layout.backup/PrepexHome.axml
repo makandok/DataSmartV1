@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25dp"
+        android:minHeight="25dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25dp"
+            android:minHeight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/linearLayout1">
+            <Button
+                android:text="Close"
+                android:id="@+id/buttonClose"
+                android:layout_width="250dp"
+                android:layout_height="match_parent" />
+            <Space
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:text="Upload Google Data"
+                android:id="@+id/buttonDatastoreSync"
+                android:layout_gravity="right"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:text="Data Entry - Client Assessment"
+                android:background="@color/colorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <Button
+                android:text="A1. Client Evaluation and Procedure Record"
+                android:id="@+id/buttonClientEvaluation"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:text="A2. Unscheduled or Followup Assessment"
+                android:id="@+id/buttonUnscheduled"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <Button
+                android:text="A3. Device Removal Visit"
+                android:id="@+id/buttonDeviceRemovalVisit"
+                android:layout_width="400dp"
+                android:layout_height="120dp" />
+            <Button
+                android:text="A4. Post Removal Visit"
+                android:id="@+id/buttonPostRemovalVisit"
+                android:layout_width="400dp"
+                android:layout_height="120dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:text="Data Edit - Client Assessment"
+                android:background="@color/colorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <Button
+                android:layout_gravity="right"
+                android:text="Edit Records"
+                android:id="@+id/buttonEditRecords"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:text="Reports"
+                android:background="@color/colorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <Button
+                android:text="View Clients To SMS"
+                android:id="@+id/buttonClientsToSms"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:text="View Clients To Call"
+                android:id="@+id/buttonClientsToCall"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <Button
+                android:text="View List of All Clients"
+                android:id="@+id/buttonViewList"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:text="View Supplies"
+                android:id="@+id/buttonSupplies"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <Button
+                android:text="View Record Summaries"
+                android:id="@+id/buttonViewRecordSummaries"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:text="Record Summaries"
+                android:background="@color/colorPrimaryDark"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center_vertical" />
+        </TableRow>
+        <TableRow
+            android:weightSum="6"
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+            <TextView
+                android:layout_weight="5"
+                android:text="@string/sys_not_updated"
+                android:id="@+id/textRecordSummaries"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="left" />
+            <Button
+                android:text="Send"
+                android:id="@+id/buttonSendReport"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+    </LinearLayout>
+</ScrollView>
